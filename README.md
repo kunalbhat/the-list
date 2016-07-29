@@ -11,5 +11,6 @@
 #### References
 
 - Uses the [gspread](https://github.com/burnash/gspread) Python module
-- Read the full [gspread API reference](http://gspread.readthedocs.io/en/latest/)
+- Read the [gspread API reference](http://gspread.readthedocs.io/en/latest/)
+- Read the [Flask documentation](http://flask.pocoo.org/docs/0.11/)
 
