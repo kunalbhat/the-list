@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The List</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table tr:first-child td {
+        font-weight: 700;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #fafafa;
+      }
+
+      table tr td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      {% for film in films %}
+      <tr>
+        {% for cell in film %}
+        <td>{{ cell }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
